@@ -116,7 +116,7 @@ console.log("----------------------------")
 console.log("Total Months:", finances.length) 
 console.log("Total Revenue:", "$" + totalRevenue) 
 console.log("Average Change:", "$" + avgChanges.toFixed(2)) // Prints to 2 decimal places. 
-console.log("Greatest Increase in Profits", greatestIncreaseMonth, "(" + "$" + greatestIncrease + ")")
+console.log("Greatest Increase in Profits:", greatestIncreaseMonth, "(" + "$" + greatestIncrease + ")")
 console.log("Greatest Decrease in Profits:", greatestDecreaseMonth, "(" + "$" + greatestDecrease + ")")
 console.log("----------------------------")
 

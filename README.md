@@ -1,96 +1,34 @@
-# Console-Finances
+### Console-Finances
 
-# Unit 4 Challenge: Console Finances
+I was hired to analyse and manipulate to the profit/loss accounts and provide easily-decipherable data for the client.
 
-## Overview
+## The Goal
 
-In this challenge, you'll be using the concepts you've learned to complete the required activity. This activity presents a real-world situation in which your newfound JavaScript skills will come in handy. You are tasked with creating code for analyzing the financial records of a company. You have been provided with a financial dataset in the `starter/index.js` file.
+The objective was to develop, in JavaScript, code which would pull the specific data out of a multi-dimensional array.
 
-## Instructions
+The required data was:
+  
+    - The total number of months provided
+    - The total revenue within that time period
+    - The average change month to month
+    - The best month in terms of profit
+    - The worst month in terms of losses
 
-1. Create a new GitHub repo called `Console-Finances`. Then, clone it to your computer.
+The secondary objective was to ensure that the code would still function should more data be added, and that it was commented in a way which enables other developers to take over if required. 
 
-2. Copy the starter files in your local git repository.
-   
-You have been given a dataset composed of arrays with two fields, Date and Profit/Losses.
+## Usage
 
-Your task is to write JavaScript code that analyzes the records to calculate each of the following:
+To view the project, please follow the links below:
 
-* The total number of months included in the dataset.
+https://bcott93.github.io/Console-Finances/
 
-* The net total amount of Profit/Losses over the entire period.
+![Example code](/images/readme-example.jpg)
 
-* The average of the **changes** in Profit/Losses over the entire period.
-  * You will need to track what the total change in profits are from month to month and then find the average.
-  * (`Total/Number of months`)
+### Credits:
 
-* The greatest increase in profits (date and amount) over the entire period.
+* [w3schools](https://www.w3schools.com/jsref/jsref_for.asp)
+* [Javascript tutorial](https://www.javascripttutorial.net/javascript-multidimensional-array/#:~:text=To%20access%20an%20element%20of,element%20of%20the%20inner%20array)
 
-* The greatest decrease in losses (date and amount) over the entire period.
+### License
 
-When you open your code in the browser your resulting analysis should look similar to the following:
-
-  ```text
-  Financial Analysis
-  ----------------------------
-  Total Months: 25
-  Total: $2561231
-  Average  Change: $-2315.12
-  Greatest Increase in Profits: Feb-2012 ($1926159)
-  Greatest Decrease in Profits: Sep-2013 ($-2196167)
-  ```
-
-Your final code should print the analysis to the console.
-
-**Hints:**
-
-* You will need to do some research on your own for this project!
-
-* Remember, in order to combine strings and variables in the console you will need to use **concatenation**.
-
-* How do you only print to the nearest 100th in JavaScript?
-
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Repository Quality: 12%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for variable naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme with description, screenshot, link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
-
----
-
-## Copyright
-
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
-
+Please see the License in the Repo. 
