@@ -1,6 +1,6 @@
 ### Console-Finances
 
-I was hired to analyse and manipulate to the profit/loss accounts and provide easily-decipherable data for the client.
+I was hired to analyse and manipulate the profit/loss accounts and provide easily-decipherable data for the client.
 
 ## The Goal
 
