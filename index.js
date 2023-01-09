@@ -86,57 +86,39 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
-
-console.log(finances.length) // 86
-
 let totalRevenue = 0
 for (i = 0; i < finances.length; i++) { // For loop to pull the 2d Array
     totalRevenue += finances[i][1] // Summing the entire length in column 2 (Index 1)
 }
-console.log("Total Revenue:", totalRevenue)
-
-let greatestChange = finances[1][1] - finances[0][1] // Starts at second entry and subtracts the first.
-let smallestChange = finances[1][1] - finances[0][1] 
-let greatestChangeMonth
-let smallestChangeMonth
+let greatestDecrease = 0
+let greatestIncrease = 0
+let greatestDecreaseMonth 
+let greatestIncreaseMonth
 
 let totalChanges = 0 
 for(i = 1; i < finances.length; i++) {
 let changes = Math.abs(finances[i][1] - finances[i - 1][1]) // Used absolute values (Math.abs) to stop positive and negative numbers cancelling each other out.   
-    if (changes > greatestChange) {  // Check every change to see if it is great than the current greatestChange value.
-        greatestChange = changes // If it is bigger than greatestChange it will amend greatestChange value. 
-        greatestChangeMonth = finances [i][0] // Once the value has been changed, pulls the corresponding month. 
+    if (finances[i][1] > greatestIncrease) {
+        greatestIncrease = finances[i][1]
+        greatestIncreaseMonth = finances[i][0]
     }
-    if (changes < smallestChange) { 
-        smallestChange = changes
-        smallestChangeMonth = finances [i][0]
+    if (finances[i][1] < greatestDecrease) {
+        greatestDecrease = finances[i][1]
+        greatestDecreaseMonth = finances[i][0]
     }
     totalChanges += changes // Sums the total changes to assist in finding the average
-    
 }
 
-avgChanges = totalChanges / finances.length
-console.log("$", avgChanges.toFixed(2)) // Prints the avgChances to a 2 decimal places.  
-console.log("Greatest Increase in Profits", greatestChangeMonth, "with a net profit of", greatestChange)
-console.log("Greatest Decrease in Profits:", smallestChangeMonth, "with a net loss of", smallestChange)
+avgChanges = (totalChanges/finances.length)   
 
-
-
-
-// for(i = 1; i < finances.length; i++)
-//     if (finances[i] === greatestChange) {
-//       let test = finances[0]
-//     }
-
-// console.log(test)
-
-
-
-// find where greatestChanges is in the array, and pull the corresponding index. 
-
-
-
-
+console.log("Financial Analysis")
+console.log("----------------------------")
+console.log("Total Months:", finances.length) 
+console.log("Total Revenue:", "$" + totalRevenue) 
+console.log("Average Change:", "$" + avgChanges.toFixed(2)) // Prints to 2 decimal places. 
+console.log("Greatest Increase in Profits", greatestIncreaseMonth, "(" + "$" + greatestIncrease + ")")
+console.log("Greatest Decrease in Profits:", greatestDecreaseMonth, "(" + "$" + greatestDecrease + ")")
+console.log("----------------------------")
 
 
 
